@@ -1,0 +1,60 @@
+@import './partial/header.scss';
+@import './partial/preview.scss';
+@import './partial/slider.scss';
+
+:root {
+  /* COLORS */
+  --accent-color: #d63131;
+  --white-color: #fff;
+  --dark-gray-color: #e2e2e2;
+  --gray-color: #f9f9f9;
+  --black-color: #242424;
+
+  /* WIDTH */
+  --width-lg: 1200px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color);
+}
+
+::-webkit-scrollbar-track {
+  background-color: #e2e2e2;
+}
+
+@font-face {
+  font-family: 'Hero';
+  src: url('../assets/fonts/hero/Herobold.woff');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--gray-color);
+  color: var(--black-color);
+  font-family: 'Hero';
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+.shared-container {
+  max-width: var(--width-lg);
+  margin: 0 auto;
+  padding: 0 15px;
+}
